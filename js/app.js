@@ -1,12 +1,13 @@
-var React = require("react");
-var ReactDOM = require("react-dom");
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-var Hello = React.createClass({
-  render: function() {
-    // return React.createElement("h1", null, "Hello React!");
-    return (<h3>Helo Webpack</h3>)
+class Hello extends React.Component {
+  render() {
+    return (
+      <h1>Helo Webpack</h1>
+    );
   }
-});
+}
 
 ReactDOM.render(
   React.createElement(Hello),
