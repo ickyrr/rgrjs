@@ -1,15 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Hello extends React.Component {
-  render() {
-    return (
-      <h1>Helo Webpack</h1>
-    );
-  }
-}
+import Main from './components/Main';
 
 ReactDOM.render(
-  React.createElement(Hello),
+  <Main />,
   document.getElementById("react")
 );

@@ -15,7 +15,7 @@ url = "mongodb://localhost:27017/rgrjs";
 
 let db;
 
-MongoClient.connect(url, (err, database) => {1
+MongoClient.connect(url, (err, database) => {
 	if(err) throw err;
 
 	db = database;
