@@ -14,10 +14,12 @@ let schema = new GraphQLSchema({
 		name: "Query",
 		fields: () => ({
 			counter: {
+				description: "The counter to be displayed.",
 				type: GraphQLInt,
 				resolve: () => counter,
 			},
 			message: {
+				description: "The message to be displayed.",
 				type: GraphQLString,
 				resolve: () => "hello graphql",
 			}
